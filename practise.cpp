@@ -1,13 +1,13 @@
-#include<iostream>
+#include<iostream>//including header file for cin and cout//
 using namespace std;
 class sample
 {
-	int a,b;
+	int a,b;//variable declaration//
 	public:
 		sample(int a , int b)//parametrized constructor//
 		{
 			(*this).a=a;//this pointer// 
-			(*this).b=b;
+			(*this).b=b;//copying values of a and b in this pointer//
 		}
 		sample(sample &old)//copy constructor//
 		{
@@ -16,11 +16,11 @@ class sample
 		}
 		void print()//print function declaration//
 		{
-		  cout<<"a ="<<a<<endl;
-		  cout<<"b ="<<b<<endl;	
+		  cout<<" a:"<<a<<endl;
+		  cout<<" b:"<<b<<endl;	
 		}
 };
-int main()
+int main()//main function//
 {
 	sample s1(10,20);//putting a=10 and b=20//
 	sample &s2(s1);//putting the value of s1 object in s2//
