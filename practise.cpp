@@ -1,6 +1,6 @@
 #include<iostream>//including header file for cin and cout//
-using namespace std;
-class sample
+using namespace std; //using namespace//
+class sample //class declaration//
 {
 	int a,b;//variable declaration//
 	public:
